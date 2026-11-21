@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Consumption Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ENERGY CONSUMPTION MONITOR</h1>
+
+  <form id="appliance-form">
+    <input type="text" id="name" placeholder="Appliance (e.g. Fan)" required>
+    <input type="number" id="watts" placeholder="Power (watts)" required>
+    <input type="number" id="hours" placeholder="Hours used per day" required>
+    <button type="submit">Add appliance</button>
+  </form>
+<ul id="appliance-list"></ul>
+<div id="totals"></div>
+<div id="chart-card"><canvas id="chart" width="400" height="250"></canvas></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
